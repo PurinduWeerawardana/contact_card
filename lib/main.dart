@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black87,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundImage: AssetImage('images/thamash.jpg'),
@@ -38,6 +39,68 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
                 letterSpacing: 3.5,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+              width: 150,
+              child: Divider(
+                color: Colors.teal,
+                thickness: 2,
+              ),
+            ),
+            const Card(
+              color: Colors.yellow,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 40,
+                  color: Colors.black87,
+                ),
+                title: Text(
+                  '+94 76 346 6810',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+            const Card(
+              color: Colors.yellow,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  size: 40,
+                  color: Colors.black87,
+                ),
+                title: Text(
+                  'purinduweerawardana@gmail.com',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+            ),
+            const Card(
+              color: Colors.yellow,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: Icon(
+                  Icons.facebook_sharp,
+                  size: 40,
+                  color: Colors.black87,
+                ),
+                title: Text(
+                  'Purindu Weerawardana',
+                  style: TextStyle(
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20,
+                  ),
+                ),
               ),
             ),
           ],
